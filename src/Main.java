@@ -13,7 +13,10 @@ public class Main {
 
         int edad = scanner.nextInt();
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
-
+        if (edad >= 18)
+            System.out.print("Acceso Autorizado. ");
+        else
+            System.out.println("Acceso Denegado");
         estudiante.mostrarInformacion();
     }
     }
